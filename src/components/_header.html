@@ -1,13 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>TerraSkyMAIN</title>
-</head>
-<body>
 <div class="header">
     <div class="navigation">
         <div class="about_us">
@@ -24,21 +14,16 @@
             Контакты
         </div>
         <div class="nav_button">
-            <button class="button" style="border-radius: 35px;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            background-color: white;
-            color: var(--primary-color);
-            border: 1px solid var(--primary-color);
-            font-size: 16px;
-            font-weight: @@font-weight;">
-       <span>Подобрать тур</span>
-</button>
+            @@include('../components/_button.html', {
+                "border-radius": "35px",
+                "padding-x": "50px",
+                "padding-y": "20px",
+                "title": "Подобрать тур",
+                "color": "white",
+                "font-size": "16px",
+                "text-color": "var(--primary-color)",
+                "border": "1px solid var(--primary-color)"
+            })
         </div>
     </div>
 </div>
-
-</body>
-</html>
